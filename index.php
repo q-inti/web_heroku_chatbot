@@ -1,0 +1,1 @@
+<?php header( 'Location: C:\Users\ale-p\Documents\C9\ICC\Lab\Mamba\index.html' ) ; ?>
