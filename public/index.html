@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  
   <title>UTEC ICC - Alejandra Prado</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
@@ -145,7 +145,43 @@
     </div>
   </section><!-- End Hero -->
 
+  
   <main id="main">
+    <!-- ======= FIREBASE !!!! ======= -->
+    <!-- add user module -->
+    <section id="add-user-module" >
+      <button id="open-add-user-form-btn">+</button>
+      <form>
+          <h2>Add User</h2>
+          name:<br>
+          <input type='text' data-key='name' class='user-input'><br>
+          username:<br>
+          <input type='text' data-key='age' class='user-input'><br>
+          email:<br>
+          <input type='text' data-key='email' class='user-input'><br>
+          <button type='button' id="add-user-btn">add user</button>
+      </form>
+    </section>
+
+    <!-- edit user module -->
+    <section id="edit-user-module">
+      <form>
+          <h2>Edit user</h2>
+          <input type="hidden" class="edit-userid">
+          name:<br>
+          <input type='text' data-key='name' class='edit-user-input'><br>
+          age:<br>
+          <input type='text' data-key='age' class='edit-user-input'><br>
+          email:<br>
+          <input type='text' data-key='email' class='edit-user-input'><br>
+          <button type='button' id="edit-user-btn">save</button>
+      </form>
+    </section>
+
+
+    <!-- show user module -->
+    <ul id="user-list"></ul>
+    <div id="user-detail"></div>
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -296,7 +332,7 @@
         <div class="section-title">
           <h2>Servicios</h2>
         </div>
-
+        
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="icofont-computer"></i></div>
@@ -623,7 +659,7 @@
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- Vendor JS Files -->
+ <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -648,7 +684,10 @@
       var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
       window.kommunicate = m; m._globals = kommunicateSettings;
     })(document, window.kommunicate || {});
-</script>
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,18 @@
+{
+  "usuarios" : [{
+      "nombre" : "Michel",
+      "apellido" : "Stempin",
+      "sexo" : "Hombre",
+      "fecha_nac" : "03/07/1988",
+      "depart" : "Arequipa",
+      "username" : "Funkey Project"  
+
+    }, {
+      "nombre" : "Alejandra",
+      "apellido" : "Prado",
+      "sexo" : "Mujer",
+      "fecha_nac" : "07/07/1988",
+      "depart" : "Amazonas",
+      "username" : "a_prado"  
+  }]
+}
